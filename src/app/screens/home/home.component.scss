@@ -14,6 +14,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+//
 #logo-header {
   grid-column: 1;
   grid-row: 2;
@@ -148,6 +149,9 @@ header {
   opacity: 1;
 }
 
+/*Estilo utilizado para deixar o site parecido com o proposto no layout,
+substituindo por hora os dados da api, que estão inacessiveis no momento.*/
+
 #card-urgency {
   .tag {
     background-color: #f11516;
@@ -157,9 +161,6 @@ header {
     color: #f11516;
   }
 }
-
-//Estilo utilizado para deixar o site parecido com o proposto no layout,
-//substituindo por hora os dados da api, que estão inacessiveis no momento.
 
 #card-student {
   .tag {
