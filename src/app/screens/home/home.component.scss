@@ -1,0 +1,520 @@
+// Div que engloba todo o component
+.main {
+  width: 414px;
+  height: 2527px;
+  background: #f6f6f9 0% 0% no-repeat padding-box;
+}
+// Cabeçalho
+header {
+  width: 414px;
+  height: 65px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#logo-header {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  padding-left: 21px;
+}
+
+#logo-mobile {
+  width: 32.24px;
+  height: 30px;
+}
+
+#logo-desktop {
+  display: none;
+}
+
+#button-login {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  width: 124px;
+  height: 36px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  opacity: 1;
+  text-transform: uppercase;
+  color: #2196f3;
+}
+
+#button-signup {
+  grid-column: 3;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+}
+
+.signup {
+  width: 124px;
+  height: 36px;
+  background: #1767e5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 2px #0000003d;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+// Fim cabeçalho
+
+.grid-contaner {
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Estilização do banner. */
+
+.banner img {
+  width: 100%;
+  height: 375px;
+  opacity: 1;
+  grid-row: 1;
+}
+
+#banner-desktop {
+  display: none;
+}
+
+/* Div que agrupa os cards de produtos. */
+
+.cards {
+  width: 414px;
+  height: 356px;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  grid-row: 2;
+}
+
+/* Estilização dos cards de produtos individuais. */
+
+.card-home {
+  grid-row: 1fr;
+  width: 374px;
+  height: 356px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.card-home h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-home p {
+  width: 343px;
+  height: 172px;
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+    var(--unnamed-line-spacing-25) var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal normal 16px/25px Roboto;
+  letter-spacing: 0px;
+  color: #5d5d5d;
+  opacity: 1;
+}
+
+.card-home button {
+  width: 133px;
+  height: 36px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  opacity: 1;
+}
+
+.tag {
+  position: relative;
+  top: -20px;
+  width: 40px;
+  height: 5px;
+  background: #6b41e9 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 5px 5px;
+  opacity: 1;
+}
+
+#card-urgency {
+  .tag {
+    background-color: #f11516;
+  }
+  h2,
+  button {
+    color: #f11516;
+  }
+}
+
+//Estilo utilizado para deixar o site parecido com o proposto no layout,
+//substituindo por hora os dados da api, que estão inacessiveis no momento.
+
+#card-student {
+  .tag {
+    background-color: #1767e5;
+  }
+  h2 {
+    color: #1767e5;
+  }
+}
+#card-specialist {
+  .tag {
+    background-color: #6b41e9;
+  }
+  h2 {
+    color: #6b41e9;
+  }
+}
+#card-nursing {
+  .tag {
+    background-color: #35db93;
+  }
+  h2,
+  button {
+    color: #35db93;
+  }
+}
+
+/* Background que fica atrás do card de assinante */
+
+.bg-down {
+  position: absolute;
+  top: 1875px;
+  width: 414px;
+  height: 208px;
+  background: #1767e5 0% 0% no-repeat padding-box;
+  opacity: 0.1;
+}
+
+/* Card de assinante.*/
+
+.card-signup {
+  position: absolute;
+  top: 1914px;
+  left: 35px;
+  width: 344px;
+  height: 270px;
+  background: transparent linear-gradient(88deg, #397ae1 0%, #addbef 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 4px 8px #1767e526;
+  border-radius: 15px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-signup h1 {
+  text-align: center;
+  width: 170px;
+  height: 70px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-32) / 32px var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal bold 32px/32px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 12px;
+}
+
+.card-signup p {
+  width: 277px;
+  height: 84px;
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+    var(--unnamed-line-spacing-17) var(--unnamed-font-family-roboto);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal normal 14px/17px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 7px;
+}
+
+.card-signup button {
+  width: 133px;
+  height: 36px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 12px #032cb23d;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #1767e5;
+}
+
+/* Inicio do Footer */
+
+.div-footer {
+  position: absolute;
+  top: 2227px;
+  left: 43px;
+  // height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo da SimSave */
+
+.logo {
+  left: 129px;
+  width: 155px;
+  height: 40px;
+  opacity: 1;
+  margin-bottom: 41.5px;
+}
+
+/* Div social - contêm os icones das redes sociais.*/
+
+.social {
+  left: 77px;
+  width: 260px;
+  height: 42px;
+  opacity: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Background dos ícones das redes sociais. */
+
+.social-icon,
+a {
+  width: 42px;
+  height: 42px;
+  background: #b3bdcc 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+/* Ajustes de tamanhos dos ícones. */
+
+#twitter {
+  width: 20px;
+  height: 21px;
+}
+
+#facebook {
+  width: 26px;
+  height: 25px;
+}
+
+#instagram {
+  width: 25px;
+  height: 25px;
+}
+
+#youtube {
+  width: 25px;
+  height: 24px;
+}
+
+#linkedin {
+  width: 23px;
+  height: 22px;
+}
+
+#email {
+  width: 20px;
+  height: 21px;
+  a {
+    width: 20px;
+    height: 21px;
+  }
+}
+
+/* Div Contato. */
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin: 42px 0 9px;
+}
+
+.contact p {
+  width: 158px;
+  height: 15px;
+  text-align: start;
+  font: normal normal bold 26px/17px Roboto;
+  letter-spacing: 0px;
+  color: #b3bdcc;
+  opacity: 1;
+  margin: 0 0 0 14px;
+}
+
+/* Texto final do footer. */
+
+.text-footer {
+  width: 328px;
+  height: 44px;
+  text-align: center;
+  font-size: 17.9px;
+  letter-spacing: 0px;
+  color: #b3bdcc;
+  opacity: 1;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+  .main {
+    width: 100%;
+    height: 1735px;
+    background: #f6f6f9 0% 0% no-repeat padding-box;
+  }
+  header {
+    width: 100%;
+    height: 65px;
+    grid-template-columns: 1fr 11fr 1fr 1fr;
+  }
+  #logo-mobile {
+    display: none;
+  }
+  #logo-desktop {
+    display: flex;
+    width: 118.02px;
+    height: 30px;
+  }
+  #button-login {
+    grid-column: 3;
+  }
+  #button-signup {
+    grid-column: 4;
+  }
+  .signup {
+    margin-right: 20px;
+  }
+  /* Estilização do banner. */
+
+  .banner img {
+    left: 0;
+    width: 100%;
+    height: 800px;
+    opacity: 1;
+  }
+  #banner-desktop {
+    display: flex;
+  }
+  #banner-mobile {
+    display: none;
+  }
+
+  /* Div que agrupa os cards de produtos. */
+  .cards {
+    width: 100%;
+    height: 356px;
+    grid-template-rows: none;
+    column-gap: 16px;
+  }
+  .card-home {
+    width: 398px;
+    height: 356px;
+  }
+  #card-urgency {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #card-student {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  #card-specialist {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  #card-nursing {
+    grid-row: 1;
+    grid-column: 4;
+  }
+  /* Background que fica atrás do card de assinante */
+  .bg-down {
+    top: 1240px;
+    width: 100%;
+    height: 208px;
+  }
+  .card-signup {
+    top: 1287px;
+    left: 651px;
+    width: 618px;
+    height: 199px;
+  }
+  .card-signup h1 {
+    text-align: center;
+    width: 333px;
+    height: 38px;
+    font: normal normal bold 31px Roboto;
+    margin-bottom: 9px;
+  }
+  .card-signup p {
+    width: 499px;
+    height: 37px;
+    margin-bottom: 19px;
+  }
+  /* Inicio do Footer */
+  .div-footer {
+    position: absolute;
+    top: 1593px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  .logo {
+    grid-row: 1;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .social {
+    grid-row: 1;
+    grid-column: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .social-icon {
+    margin: 0 6.5px 0;
+  }
+  .contact {
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+    margin: 0;
+  }
+  .contact p {
+    margin: 0;
+  }
+  .text-footer {
+    grid-row: 2;
+    grid-column: 3;
+    padding-left: 56px;
+  }
+  .text-footer p {
+    margin: 0;
+    text-align: justify;
+  }
+}

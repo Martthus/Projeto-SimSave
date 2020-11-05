@@ -1,0 +1,127 @@
+<div class="main">
+    <header>
+        <div id="logo-header">
+            <img src="../../../assets/images/LogoSimSave2.png" alt="" id="logo-mobile">
+            <img src="../../../assets/images/LogoSimSave.png" alt="" id="logo-desktop">
+        </div>
+        <div id="button-login">
+            <button mat-button routerLink="/login" class="login">Entrar</button>
+        </div>
+        <div id="button-signup">
+            <button mat-button routerLink="/login" class="signup">Cadastre-se</button>
+        </div>
+    </header>
+    <div class="grid-container">
+        <div class="banner">
+            <img src="../../assets/images/banner@2x.png" alt="Banner" id="banner-desktop">
+            <img src="../../assets/images/banner@1x.png" alt="Banner" id="banner-mobile">
+        </div>
+        <!-- *ngFor="let product of products" -->
+        <div style="margin-top: -67px;">
+            <div class="cards">
+                <div class="card-home" id="card-urgency">
+                    <div class="tag">
+                        <!-- style="background-color: {{product.color}}" -->
+                    </div>
+                    <h2>Urgency
+                        <!-- {{product.title}} -->
+                    </h2>
+                    <p>
+                        <!-- {{product.title}} -->
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                        ea
+                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <button mat-button>Saiba mais</button>
+                </div>
+                <!-- mock de div para simular o recebimento dos dados da api -->
+                <div class="card-home" id="card-student">
+                    <div class="tag"></div>
+                    <h2>Student</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                        ea
+                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <button mat-button disabled>Em breve</button>
+                </div>
+                <div class="card-home" id="card-specialist">
+                    <div class="tag"></div>
+                    <h2>Specialist</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                        ea
+                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <button mat-button disabled>Em breve</button>
+                </div>
+                <div class="card-home" id="card-nursing">
+                    <div class="tag"></div>
+                    <h2>Nursing</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                        ea
+                        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <button mat-button>Saiba mais</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bg-down"></div>
+    <div class="card-signup">
+        <h1>Ainda não é assinante?</h1>
+        <p>Cadastre-se gratuitamente e descubra como vários de profissionais da área da saúde estão aprimorando seus
+            estudos através do método inovador SimSave.</p>
+        <button mat-button routerLink="/login">Cadastre-se</button>
+    </div>
+    <div class="div-footer">
+        <div class="logo">
+            <img src="../../assets/images/LogoSimSave.png" alt="Logo SimSave">
+        </div>
+        <div class="social">
+
+            <div class="social-icon">
+                <a href="http://twitter.com" target="_blank">
+                    <img src="../../assets/images/twitter.ico" alt="Twitter" id="twitter">
+                </a>
+            </div>
+
+            <div class="social-icon">
+                <a href="https://www.facebook.com/simsavemed" target="_blank">
+                    <img src="../../assets/images/facebook.ico" alt="Facebook" id="facebook">
+                </a>
+            </div>
+
+            <div class="social-icon">
+                <a href="https://www.instagram.com/simsave.enf" target="_blank">
+                    <img src="../../assets/images/instagram.ico" alt="Instagram" id="instagram">
+                </a>
+            </div>
+
+            <div class="social-icon">
+                <a href="https://www.youtube.com/channel/UCXX_EfE6GQWPoOQxwZd-gqg" target="_blank">
+                    <img src="../../assets/images/youtube.ico" alt="Youtube" id="youtube"></a>
+            </div>
+
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/company/simsave" target="_blank">
+                    <img src="../../assets/images/linkedin.ico" alt="Linkedin" id="linkedin">
+                </a>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="social-icon"><img src="../../assets/images/email.ico" alt="E-mail" id="email"></div>
+            <p>Fale Conosco</p>
+        </div>
+        <div class="text-footer">
+            <p>Dúvida, crítica sugestão ou elogio? Envie um e-mail para suporte@simsave.com.br</p>
+        </div>
+    </div>
+</div>
