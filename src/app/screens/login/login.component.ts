@@ -4,9 +4,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class LoginComponent{
-  hide = true;
+export class LoginComponent {
   constructor() { }
-
 }
