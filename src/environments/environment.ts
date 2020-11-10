@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: 'https://teste-simsave.getsandbox.com:443/'
+  API: 'https://simsave-teste.getsandbox.com/'
 };
 
 /*

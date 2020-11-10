@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     this.service.getAll()
       .subscribe(
         response => {
-          this.products = response;
+          this.products = response.products;
         },
         error => {
           console.log(error)

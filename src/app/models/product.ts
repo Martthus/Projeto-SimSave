@@ -1,5 +1,5 @@
 export interface Product {
-    color: number,
+    color: string,
     title: string,
     text: string
 }

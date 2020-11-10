@@ -149,45 +149,6 @@ header {
   opacity: 1;
 }
 
-/*Estilo utilizado para deixar o site parecido com o proposto no layout,
-substituindo por hora os dados da api, que estão inacessiveis no momento.*/
-
-#card-urgency {
-  .tag {
-    background-color: #f11516;
-  }
-  h2,
-  button {
-    color: #f11516;
-  }
-}
-
-#card-student {
-  .tag {
-    background-color: #1767e5;
-  }
-  h2 {
-    color: #1767e5;
-  }
-}
-#card-specialist {
-  .tag {
-    background-color: #6b41e9;
-  }
-  h2 {
-    color: #6b41e9;
-  }
-}
-#card-nursing {
-  .tag {
-    background-color: #35db93;
-  }
-  h2,
-  button {
-    color: #35db93;
-  }
-}
-
 /* Background que fica atrás do card de assinante */
 
 .bg-down {
@@ -423,30 +384,15 @@ a {
   .cards {
     width: 100%;
     height: 356px;
-    grid-template-rows: none;
-    column-gap: 16px;
   }
   .card-home {
     width: 398px;
     height: 356px;
-  }
-  #card-urgency {
     grid-row: 1;
-    grid-column: 1;
+    grid-column: auto;
+    margin: 0 8px;
   }
 
-  #card-student {
-    grid-row: 1;
-    grid-column: 2;
-  }
-  #card-specialist {
-    grid-row: 1;
-    grid-column: 3;
-  }
-  #card-nursing {
-    grid-row: 1;
-    grid-column: 4;
-  }
   /* Background que fica atrás do card de assinante */
   .bg-down {
     top: 1240px;
